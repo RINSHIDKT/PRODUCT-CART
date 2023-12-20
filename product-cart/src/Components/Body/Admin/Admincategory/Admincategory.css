@@ -1,0 +1,49 @@
+.admin-cate-main-img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.507),rgba(0, 0, 0, 0.507)), url(../Adminhome/watch-main.jpg);
+    background-size: cover;
+    height: 100vh;
+  }
+.admin-category-main{
+    padding-top: 12%;
+}
+.admin-category-input input{
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.admin-category-input{
+    text-align: center;
+    border: 2px solid white;
+    width: 40%;
+    margin: auto;
+    border-radius: 8px;
+}
+.admin-category-input h2{
+    font-size: 30px;
+    margin-top: -50px;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 50px;
+}
+.admin-category-add-btn{
+    margin-bottom: 20px;
+}
+.admin-category-input p{
+    font-size: 30px;
+    display: flex;
+    justify-content: end;
+    margin-top: 6px;
+    margin-right: 14px;
+}
+.admin-category-input p:hover{
+    color: gray;
+}
+.admin-category-back-btn{
+    text-decoration: none;
+    color: white;
+}
+.admin-category-back-btn:hover{
+    color: gray;
+    transition: 0.8s;
+}

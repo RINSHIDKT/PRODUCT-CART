@@ -1,0 +1,16 @@
+.admin-forgot-email i{
+    border: 2px solid skyblue;
+    padding: 4px 30px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.admin-forgot-email i:hover{
+    border: 2px solid skyblue;
+    color: white;
+    background-color: skyblue;
+    transition: 0.8s;
+}
+.admin-forgot-email-message{
+    font-weight: bolder;
+}
