@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import axios from 'axios'
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import watchhouse from '../Adminlogin/watch-house-logo.png';
 import './Adminforgotpass.css'
 
@@ -10,17 +8,7 @@ import './Adminforgotpass.css'
 const Adminforgotpass = () => {
 
 
-    const success = () =>
-    toast.success("You Are Succesfuly Changed",{
-     position: "top-right",
-     autoClose:2500 ,
-     hideProgressBar: false,
-     closeOnClick: true,
-     pauseOnHover: true, 
-     draggable: true,
-     progress: undefined, 
-     theme: "dark",
-    })
+  
   
   
   
@@ -38,9 +26,7 @@ const Adminforgotpass = () => {
           if(data.email===val.email){
             const res=await axios.patch(`http://localhost:3370/productcart/forgotepwd/${val.phone}`,{password:val.password})
         if(res.status===200){
-          success();
-              setTimeout(()=>{
-              },3000);
+          alert("You Are Succesfuly Changed")
         }
         console.log(res.status);
       }else{
@@ -72,18 +58,7 @@ const Adminforgotpass = () => {
                   <input type="password" id="login" class="fadeIn second" onChange={handlechange}  name="confirm"  placeholder="Confirm Your Password"/>
                 </div>
                 <input type="submit" class="fadeIn fourth" onClick={editPwd}  value="Change Password"/>
-                <ToastContainer
-                    position="top-right"
-                    autoClose={5000}
-                    hideProgressBar={false}
-                    newestOnTop={false}
-                    closeOnClick
-                    rtl={false}
-                    pauseOnFocusLoss
-                    draggable
-                    pauseOnHover
-                    theme="dark"
-                  />
+                
                 </form>
                 <div className="admin-forgot-email">
                    <Link to={"/adminlogin"}><i class="fa fa-arrow-left" aria-hidden="true"></i></Link>

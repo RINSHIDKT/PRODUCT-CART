@@ -4,8 +4,6 @@ import { Link,useNavigate  } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
 import watchhouse from '../Adminlogin/watch-house-logo.png';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 
 

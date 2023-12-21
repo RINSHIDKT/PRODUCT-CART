@@ -6,7 +6,7 @@
 .admin-home-btn-product-head{
     border: 2px solid white;
     border-radius: 8px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.66),rgba(0, 0, 0, 0.667)), url(./watch-product.avif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.516),rgba(0, 0, 0, 0.484)), url(./watch-product.avif);
     background-size: cover;
     width: 25%;
     text-align: center;
@@ -17,24 +17,27 @@
 .admin-home-btn-category-head{
     border: 2px solid white;
     border-radius: 8px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.658),rgba(0, 0, 0, 0.667)), url(./watch-caregory.avif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.516),rgba(0, 0, 0, 0.484)), url(./watch-caregory.avif);
     background-size: cover;
     width: 25%;
     text-align: center;
     padding: 20px;
     padding-bottom: 20px;
-    align-items: center
+    align-items: center;
 }
 .admin-home-btn-main h1{
     margin-bottom: 20px;
     margin-top: 10px;
     color: white;
+    font-weight: bolder;
+    font-size: 30px;
 }
 .admin-home-btn-main{
     display: flex;
     justify-content: center;
     gap: 100px;
     padding-top: 5%;
+    margin-bottom: 5%;
 }
 
 
@@ -108,11 +111,140 @@
   }
   .navbar{
     background-color: skyblue;
-    border: 1px solid black;
+  }
+
+  .admin-home-category-contents{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid white;
+    width: 56.4%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.345),rgba(0, 0, 0, 0.345));
+  }
+  .category-edit button{
+    padding: 4px 51px;
+    border: 1px solid white;
+    border-radius: 8px;
+  }
+  .category-edit button:hover{
+    background-color: green;
+    transition: 0.8s;
+  }
+  .category-delete button:hover{
+    background-color: brown;
+    transition: 0.8s;
+  }
+  .category-delete button{
+    padding: 4px 40px;
+    border: 1px solid white;
+    border-radius: 8px;
+  }
+  .category-content-delete-edit{
+    display: flex;
+    gap: 20px;
+  }
+  .category-content{
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 2px;
   }
 
 
 
+
+
+  .Btn {
+    --black: brown;
+    --ch-black: brown;
+    --eer-black: brown;
+    --night-rider: brown;
+    --white: #ffffff;
+    --af-white: #f3f3f3;
+    --ch-white: #e1e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: var(--night-rider);
+  }
+  
+  /* plus sign */
+  .sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sign svg {
+    width: 17px;
+  }
+  
+  .sign svg path {
+    fill: var(--af-white);
+  }
+  /* text */
+  .text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: var(--af-white);
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+  }
+  /* hover effect on button width */
+  .Btn:hover {
+    width: 125px;
+    border-radius: 5px;
+    transition-duration: .3s;
+  }
+  
+  .Btn:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+  }
+  /* hover effect button's text */
+  .Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+  }
+  /* button click effect*/
+  .Btn:active {
+    transform: translate(2px ,2px);
+  }
+
+
+  .admin-home-logout-session{
+    align-items: center;
+    display: flex;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.482),rgba(0, 0, 0, 0.477));
+  }
+  .admin-home-logout-session-head{
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
 
   

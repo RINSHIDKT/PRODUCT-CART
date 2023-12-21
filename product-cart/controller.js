@@ -99,10 +99,14 @@ export async function addCategory(req, res) {
    }
 }
 
+
+
 export async function getCategory(req,res){
    let task=await category_schema.find()
    res.status(200).send(task)
 }
+
+
 
 export async function getcategoryfulldata(req,res){
    const{id}=req.params;
@@ -111,6 +115,8 @@ export async function getcategoryfulldata(req,res){
    console.log(task);
    res.status(200).send(task)
 }
+
+
 
 export async function editCategorydetails(req, res) {
    const { id } = req.params;
@@ -123,6 +129,8 @@ export async function editCategorydetails(req, res) {
    }
 }
 
+
+
 export function deleteCategory(req,res)
 {
    const{id}=req.params;
@@ -132,4 +140,15 @@ export function deleteCategory(req,res)
    }).catch((error)=>{
        res.status(404).send(error)
    })
+}
+
+
+export async function fetchAdminusername(req, res) {
+   try {
+       const {username}=req.user;
+        res.status(200).send({ msg:username });
+       res.end()
+     } catch (error) {
+       res.status(404).send(error);
+     }
 }

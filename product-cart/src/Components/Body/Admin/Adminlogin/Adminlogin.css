@@ -287,3 +287,6 @@ input[type=text]:placeholder {
   background-color: rgba(128, 128, 128, 0.098);
   font-size: 16px;
 }
+.admin-forgot-email-inp input:hover{
+  border-bottom: 2px solid #39ace7;
+}

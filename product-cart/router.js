@@ -13,6 +13,7 @@ router.route("/getcategory").get(controller.getCategory);
 router.route("/getcategorydetails/:id").post(controller.getcategoryfulldata);
 router.route("/editcategorydetails/:id").patch(controller.editCategorydetails);
 router.route("/deletecategory/:id").delete(controller.deleteCategory);
+router.route("/fetchadminusername").post(Auth,controller.fetchAdminusername);
 
 
 export default router;
